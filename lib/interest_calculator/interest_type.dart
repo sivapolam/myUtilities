@@ -1,0 +1,1 @@
+enum InterestType { Simple, Compound }
