@@ -1,1 +1,1 @@
-enum TimeCycle { Annually, SemiAnnually, Quarterly, Monthly, OnceIn3Years }
+enum TimeCycle { Annually, SemiAnnually, Quarterly, Monthly }
