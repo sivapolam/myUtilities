@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_utilities/home_page.dart';
+import 'home_screen_sections.dart';
 import 'interest_calculator/interest_calculator.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
           // return false to prevent the app from being closed
           return true;
         },
-        child: MyHomePage(),
+        child: HomeScreen(),
       ),
       localizationsDelegates: const [
         GlobalMaterialLocalizations.delegate,

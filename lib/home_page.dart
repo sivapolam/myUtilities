@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:my_utilities/interest_calculator/interest_calculator.dart';
 import 'package:my_utilities/interest_rate_calculator/interest_rate_calculator.dart';
 
+import 'chit_calculator/chit_calulator.dart';
+import 'emi_calculator/emi_calculator_advances.dart';
+import 'emi_calculator/emicalc.dart';
+
 class MyHomePage extends StatefulWidget {
   @override
   _MyHomePageState createState() => _MyHomePageState();
@@ -13,7 +17,7 @@ class _MyHomePageState extends State<MyHomePage> {
   static List<Widget> _widgetOptions = <Widget>[
     InterestCalculator(),
     InterestRateCalculatorScreen(),
-    Text('Profile Page'),
+    EMICalcWidget(),
   ];
 
   void _onItemTapped(int index) {
@@ -40,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
-            label: 'Profile',
+            label: 'EMI Calc',
           ),
         ],
         currentIndex: _selectedIndex,

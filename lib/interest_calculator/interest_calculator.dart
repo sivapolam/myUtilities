@@ -7,6 +7,7 @@ import 'package:intl/intl.dart';
 import 'package:my_utilities/ad_helper.dart';
 import 'package:my_utilities/interest_calculator/text_custom.dart';
 import 'package:my_utilities/interest_calculator/time_cycle.dart';
+import 'package:my_utilities/ui_helper.dart';
 import 'package:share/share.dart';
 import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
 
@@ -277,7 +278,8 @@ class _InterestCalculatorState extends State<InterestCalculator> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('MoneyCalc'),
+        title: Center(
+            child: Text('Interest Calculator', style: UiHelper.getTextStyle())),
         actions: [
           IconButton(
             icon: const Icon(Icons.share),
